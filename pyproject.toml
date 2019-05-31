@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "philiprehberger-changelog-gen"
-version = "0.1.0"
+version = "0.1.1"
 description = "Git-based changelog generator from conventional commits"
 readme = "README.md"
 license = "MIT"
@@ -18,6 +18,12 @@ classifiers = [
 
 [project.scripts]
 changelog-gen = "philiprehberger_changelog_gen:main"
+
+[project.urls]
+Homepage = "https://github.com/philiprehberger/py-changelog-gen#readme"
+Repository = "https://github.com/philiprehberger/py-changelog-gen"
+Issues = "https://github.com/philiprehberger/py-changelog-gen/issues"
+Changelog = "https://github.com/philiprehberger/py-changelog-gen/blob/main/CHANGELOG.md"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/philiprehberger_changelog_gen"]
