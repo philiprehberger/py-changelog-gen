@@ -1,5 +1,9 @@
 # philiprehberger-changelog-gen
 
+[![Tests](https://github.com/philiprehberger/py-changelog-gen/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/py-changelog-gen/actions/workflows/publish.yml)
+[![PyPI version](https://img.shields.io/pypi/v/philiprehberger-changelog-gen.svg)](https://pypi.org/project/philiprehberger-changelog-gen/)
+[![License](https://img.shields.io/github/license/philiprehberger/py-changelog-gen)](LICENSE)
+
 Git-based changelog generator from conventional commits.
 
 ## Install
