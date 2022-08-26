@@ -6,7 +6,7 @@
 
 Git-based changelog generator from conventional commits.
 
-## Install
+## Installation
 
 ```bash
 pip install philiprehberger-changelog-gen
@@ -77,6 +77,15 @@ Commits are grouped by type: Features, Bug Fixes, Performance, Refactoring, Docu
 - **db:** fix connection pool leak
 ```
 
+
+## API
+
+| Function / Class | Description |
+|------------------|-------------|
+| `generate_changelog(repo_path, from_tag, to_ref, version, include_types, exclude_types)` | Generate a changelog from git history between tags/refs |
+| `Changelog` | Generated changelog content with `to_markdown()` and `write(path, mode)` methods |
+| `CommitEntry` | A parsed conventional commit (hash, type, scope, message, breaking, date, author) |
+| `main()` | CLI entrypoint for command-line usage |
 
 ## Development
 
