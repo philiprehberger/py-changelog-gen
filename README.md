@@ -77,6 +77,14 @@ Commits are grouped by type: Features, Bug Fixes, Performance, Refactoring, Docu
 - **db:** fix connection pool leak
 ```
 
+
+## Development
+
+```bash
+pip install -e .
+python -m pytest tests/ -v
+```
+
 ## License
 
 MIT

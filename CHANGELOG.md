@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5
+
+- Add Development section to README
+
 ## 0.1.2
 
 - Update project URLs in pyproject.toml
