@@ -45,7 +45,7 @@ changelog-gen --from v0.1.0 --version 0.2.0
 changelog-gen --output CHANGELOG.md --prepend
 ```
 
-## Conventional Commits
+### Conventional Commits
 
 The generator parses conventional commit messages:
 
@@ -58,7 +58,7 @@ chore: update dependencies
 
 Commits are grouped by type: Features, Bug Fixes, Performance, Refactoring, Documentation, Tests, Chores, CI/CD, Build, Style.
 
-## Output Example
+### Output Example
 
 ```markdown
 ## 0.2.0 (2026-03-10)
@@ -76,7 +76,6 @@ Commits are grouped by type: Features, Bug Fixes, Performance, Refactoring, Docu
 
 - **db:** fix connection pool leak
 ```
-
 
 ## API
 
