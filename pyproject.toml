@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "philiprehberger-changelog-gen"
-version = "0.1.6"
+version = "0.1.9"
 description = "Git-based changelog generator from conventional commits"
 readme = "README.md"
 license = "MIT"
@@ -34,3 +34,9 @@ Changelog = "https://github.com/philiprehberger/py-changelog-gen/blob/main/CHANG
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/philiprehberger_changelog_gen"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+strict = true
