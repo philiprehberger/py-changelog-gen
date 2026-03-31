@@ -2,8 +2,7 @@
 
 [![Tests](https://github.com/philiprehberger/py-changelog-gen/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/py-changelog-gen/actions/workflows/publish.yml)
 [![PyPI version](https://img.shields.io/pypi/v/philiprehberger-changelog-gen.svg)](https://pypi.org/project/philiprehberger-changelog-gen/)
-[![License](https://img.shields.io/github/license/philiprehberger/py-changelog-gen)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/py-changelog-gen)](https://github.com/philiprehberger/py-changelog-gen/commits/main)
 
 Git-based changelog generator from conventional commits.
 
@@ -78,7 +77,6 @@ Commits are grouped by type: Features, Bug Fixes, Performance, Refactoring, Docu
 - **db:** fix connection pool leak
 ```
 
-
 ## API
 
 | Function / Class | Description |
@@ -95,6 +93,24 @@ pip install -e .
 python -m pytest tests/ -v
 ```
 
+## Support
+
+If you find this project useful:
+
+⭐ [Star the repo](https://github.com/philiprehberger/py-changelog-gen)
+
+🐛 [Report issues](https://github.com/philiprehberger/py-changelog-gen/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+
+💡 [Suggest features](https://github.com/philiprehberger/py-changelog-gen/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
+
+🌐 [All Open Source Projects](https://philiprehberger.com/open-source-packages)
+
+💻 [GitHub Profile](https://github.com/philiprehberger)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/philiprehberger)
+
 ## License
 
-MIT
+[MIT](LICENSE)
