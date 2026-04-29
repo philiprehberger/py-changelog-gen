@@ -45,6 +45,17 @@ changelog-gen --from v0.1.0 --version 0.2.0
 changelog-gen --output CHANGELOG.md --prepend
 ```
 
+### Filter by Scope
+
+```python
+# Only include commits scoped to "api"
+changelog = generate_changelog(scope="api", version="0.2.0")
+```
+
+```bash
+changelog-gen --scope api --version 0.2.0
+```
+
 ## Conventional Commits
 
 The generator parses conventional commit messages:
@@ -81,7 +92,7 @@ Commits are grouped by type: Features, Bug Fixes, Performance, Refactoring, Docu
 
 | Function / Class | Description |
 |------------------|-------------|
-| `generate_changelog(repo_path, from_tag, to_ref, version, include_types, exclude_types)` | Generate a changelog from git history between tags/refs |
+| `generate_changelog(repo_path, from_tag, to_ref, version, include_types, exclude_types, scope)` | Generate a changelog from git history between tags/refs |
 | `Changelog` | Generated changelog content with `to_markdown()` and `write(path, mode)` methods |
 | `CommitEntry` | A parsed conventional commit (hash, type, scope, message, breaking, date, author) |
 | `main()` | CLI entrypoint for command-line usage |

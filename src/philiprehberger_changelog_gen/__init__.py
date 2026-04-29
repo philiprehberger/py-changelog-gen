@@ -135,6 +135,7 @@ def generate_changelog(
     version: str | None = None,
     include_types: list[str] | None = None,
     exclude_types: list[str] | None = None,
+    scope: str | None = None,
 ) -> Changelog:
     """Generate a changelog from git history.
 
@@ -145,6 +146,8 @@ def generate_changelog(
         version: Version label for the changelog section.
         include_types: Only include these commit types.
         exclude_types: Exclude these commit types.
+        scope: When set, only include commits whose conventional-commit
+            scope equals this value (e.g. ``scope="api"``).
 
     Returns:
         Changelog object with parsed entries.
@@ -201,6 +204,8 @@ def generate_changelog(
             continue
         if exclude_types and entry.type in exclude_types:
             continue
+        if scope is not None and entry.scope != scope:
+            continue
 
         if entry.breaking:
             breaking.append(entry)
@@ -226,6 +231,7 @@ def main() -> None:
     parser.add_argument("--version", help="Version label")
     parser.add_argument("--output", "-o", help="Output file (default: stdout)")
     parser.add_argument("--prepend", action="store_true", help="Prepend to existing file")
+    parser.add_argument("--scope", help="Only include commits with this scope")
     args = parser.parse_args()
 
     changelog = generate_changelog(
@@ -233,6 +239,7 @@ def main() -> None:
         from_tag=args.from_tag,
         to_ref=args.to,
         version=args.version,
+        scope=args.scope,
     )
 
     if args.output:

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0 (2026-04-29)
+
+- Add `scope` parameter to `generate_changelog()` and `--scope` CLI flag for filtering commits by conventional-commit scope
+- Replace import-only stub with real test suite covering parsing, grouping, breaking changes, scope/include/exclude filters, and markdown rendering
+
 ## 0.1.10 (2026-03-31)
 
 - Standardize README to 3-badge format with emoji Support section
